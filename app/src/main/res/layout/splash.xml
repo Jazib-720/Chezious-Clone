@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcb08"
+    android:clickable="true">
+
+    <!-- LinearLayout for top content -->
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="20dp"
+android:weightSum="3">
+
+<!-- Restaurant Logo -->
+<ImageView
+    android:padding="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginBottom="30dp"
+    android:layout_weight="1"
+    android:src="@drawable/logo_restaurant" />
+</LinearLayout>
+
+    <!-- RelativeLayout for bottom content -->
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true">
+
+<!-- Blinking Logo -->
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="25dp"
+    android:src="@drawable/logo_blink"
+    android:scaleType="centerInside" />
+</RelativeLayout>
+    </RelativeLayout>
